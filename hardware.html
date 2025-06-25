@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Hardware - José Carlos Gomes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f4f6fb; color: #222; }
+        .container { max-width: 950px; margin: 40px auto; padding: 0 16px; }
+        .back-link { display: inline-block; margin: 24px 0 0 0; color: #1976d2; text-decoration: none; font-weight: bold; }
+        .back-link:hover { text-decoration: underline; }
+        h1 { color: #1976d2; }
+        .intro { background: #e3f2fd; border-radius: 10px; padding: 18px; margin-bottom: 28px; }
+        .topics { margin: 24px 0; }
+        .topics h2 { color: #1976d2; margin-bottom: 10px; }
+        .topics ul { padding-left: 20px; }
+        .topics li { margin-bottom: 8px; }
+        .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 32px; }
+        .project-card { background: #fff; border-radius: 14px; box-shadow: 0 4px 16px #0001; padding: 18px; display: flex; flex-direction: column; align-items: center; transition: transform 0.2s; }
+        .project-card:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 8px 24px #0002; }
+        .project-card img { width: 140px; height: 140px; object-fit: cover; border-radius: 10px; margin-bottom: 14px; border: 2px solid #e3f2fd; }
+        .project-card h3 { margin: 0 0 8px 0; color: #1976d2; }
+        .project-card p { margin: 0 0 8px 0; color: #444; font-size: 1rem; text-align: center; }
+        .project-card a { color: #1976d2; text-decoration: underline; font-size: 0.95rem; }
+        .timeline { background:#fff; border-radius:10px; padding:18px; margin-top:36px; }
+        .timeline h2 { color:#1976d2; }
+        .timeline ul { list-style: none; padding-left: 0; }
+        .timeline li { margin-bottom: 8px; }
+        .video { background:#fff; border-radius:10px; padding:18px; margin-top:36px; text-align:center; }
+        .video h2 { color:#1976d2; }
+        .curiosidades { background: #f1f8e9; border-radius: 10px; padding: 18px; margin-top: 36px; }
+        .curiosidades h2 { color: #388e3c; margin-bottom: 10px; }
+        .curiosidades ul { padding-left: 20px; }
+        .curiosidades li { margin-bottom: 8px; }
+        @media (max-width: 700px) {
+            .projects { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Voltar ao portfólio</a>
+        <h1>Projetos de Hardware</h1>
+        <div class="intro">
+            <p>
+                Aqui você encontra meus principais projetos e aprendizados sobre <b>hardware</b>, desde a montagem de computadores até a análise de componentes e periféricos. Explore imagens, dicas e curiosidades sobre o mundo físico da informática!
+            </p>
+        </div>
+
+        <div class="topics">
+            <h2>Temas Abordados</h2>
+            <ul>
+                <li><b>Componentes Internos:</b> Placa-mãe, processador, memória RAM, HD/SSD, fonte.</li>
+                <li><b>Montagem e Manutenção:</b> Passo a passo para montar/desmontar um PC.</li>
+                <li><b>Periféricos:</b> Teclado, mouse, monitor, impressora e dispositivos externos.</li>
+                <li><b>Diagnóstico:</b> Identificação de problemas e soluções práticas.</li>
+                <li><b>Ferramentas:</b> Multímetro, kits de limpeza, softwares de diagnóstico.</li>
+            </ul>
+        </div>
+
+        <div class="projects">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" alt="Montagem de PC">
+                <h3>Montagem de PC</h3>
+                <p>Projeto prático de montagem e identificação dos principais componentes internos de um computador.</p>
+                <a href="https://www.youtube.com/watch?v=KpOeQzA1bq4" target="_blank">Veja como montar um PC</a>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Análise de Placa-mãe">
+                <h3>Análise de Placa-mãe</h3>
+                <p>Estudo detalhado das funções e conexões de uma placa-mãe real, identificando slots e chips.</p>
+                <a href="https://pt.wikipedia.org/wiki/Placa-m%C3%A3e" target="_blank">Saiba mais sobre placas-mãe</a>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Periféricos">
+                <h3>Periféricos</h3>
+                <p>Apresentação dos principais dispositivos de entrada e saída utilizados no laboratório.</p>
+                <a href="https://www.todamateria.com.br/perifericos-de-um-computador/" target="_blank">Tipos de periféricos</a>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <h2>Linha do Tempo do Projeto</h2>
+            <ul>
+                <li><b>Semana 1:</b> Estudo dos componentes internos e externos do computador.</li>
+                <li><b>Semana 2:</b> Montagem e desmontagem prática de um PC.</li>
+                <li><b>Semana 3:</b> Diagnóstico de falhas e manutenção preventiva.</li>
+                <li><b>Semana 4:</b> Apresentação dos projetos e relatório final.</li>
+            </ul>
+        </div>
+
+        <div class="video">
+            <h2>Vídeo: Como funciona um computador?</h2>
+            <iframe width="360" height="215" src="https://www.youtube.com/embed/2Vt7Ik8Ublw" title="Como funciona um computador? (Manual do Mundo)" frameborder="0" allowfullscreen style="border-radius:10px;"></iframe>
+        </div>
+
+        <div class="curiosidades">
+            <h2>Curiosidades e Dicas</h2>
+            <ul>
+                <li>O primeiro computador eletrônico do mundo, o ENIAC, pesava 30 toneladas!</li>
+                <li>Manter o hardware limpo aumenta a vida útil dos componentes.</li>
+                <li>Placas-mãe modernas possuem LEDs para diagnóstico rápido de falhas.</li>
+                <li>Periféricos sem fio usam tecnologia Bluetooth ou RF para comunicação.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

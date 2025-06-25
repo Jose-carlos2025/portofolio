@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio - José Carlos Gomes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 16px; }
+        .profile { display: flex; align-items: center; gap: 24px; margin-bottom: 40px; }
+        .profile img { width: 110px; height: 110px; border-radius: 50%; border: 4px solid #2c3e50; object-fit: cover; }
+        .profile-info h1 { margin: 0 0 8px 0; font-size: 2.2rem; }
+        .profile-info p { margin: 0; color: #555; }
+        .section-title { color: #2c3e50; margin-top: 48px; }
+        .modules { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 24px; padding: 16px 0; }
+        .modules .card { background:#fff; border-radius:16px; box-shadow:0 4px 24px #0002; padding:24px; display:flex; flex-direction:column; align-items:flex-start; }
+        .modules .card h3 { margin:0 0 8px 0; }
+        .modules .card a.tag-link { text-decoration:none; }
+        .modules .card a.tag-link span:hover { filter: brightness(0.9); box-shadow: 0 2px 8px #0001; }
+        .skills-grid, .qual-grid, .projects-grid, .contact-grid { display: flex; flex-wrap: wrap; gap: 24px; }
+        .skills-col, .qual-col, .contact-col { flex: 1; min-width: 220px; }
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:24px; }
+        .project-card { background:#fff; border-radius:14px; box-shadow:0 4px 16px #0001; padding:18px; }
+        .project-card h3 { margin-top:0; }
+        .project-card a { color:#0288d1; text-decoration:underline; }
+        .contact-form input, .contact-form textarea { width:100%;margin-bottom:8px;padding:8px;border-radius:6px;border:1px solid #ccc; }
+        .contact-form button { background:#0288d1;color:#fff;padding:8px 18px;border:none;border-radius:6px;cursor:pointer; }
+        @media (max-width: 700px) {
+            .profile { flex-direction: column; align-items: flex-start; }
+            .profile img { margin-bottom: 16px; }
+            .skills-grid, .qual-grid, .contact-grid { flex-direction: column; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Perfil -->
+        <section class="profile">
+            <img src="Imagem WhatsApp 2025-06-23 às 16.26.26_0a7d11f7.jpg" alt="José Carlos Gomes">
+            <div class="profile-info">
+                <h1>José Carlos Gomes</h1>
+                <p>Bem-vindos ao meu Portfólio da disciplina de Componente de Formação Tecnológica,</p>
+<p>
+    Sinta-se à vontade para visitar meu repositório no 
+    <a href="https://github.com/Jose-carlos2025?tab=repositories" target="_blank" style="color:#0288d1; text-decoration:underline; font-weight:bold;">
+        GitHub
+    </a>
+    e conhecer todos os meus projetos públicos.
+</p>
+            </div>
+        </section>
+
+      
+
+        <!-- Projetos -->
+        <section>
+            <h2 class="section-title">Meus Projetos desenvolvidos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Jogo</h3>
+                    <p>Jogo da velha online desenvolvido para praticar lógica e interface web.</p>
+                    <a href="https://jogo-da-velha-ashen-three.vercel.app" target="_blank">Acessar projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Git e GitHub</h3>
+                    <p>Guia completo sobre Git e GitHub</p>
+                    <a href="https://pair-programming-eosin.vercel.app" target="_blank">Acessar projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Curso de programação</h3>
+                    <p>Sobre o curso programação e informatica.</p>
+                    <a href="https://praticas-1.vercel.app" target="_blank">Acessar projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Hardeware e Software</h3>
+                    <p>Projetos sobre Hardeware e software com informações acadêmicas.</p>
+                    <a href="https://jose-carlos2025.vercel.app" target="_blank">Acessar projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Redes Neurais, Computação quantica e IBM</h3>
+                    <p>Experimentos e estudos sobre Redes Neurais, Computação quantica e IBM.</p>
+                    <a href="https://redes-neurais-ia.vercel.app" target="_blank">Acessar projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Estrutura de Dados e Redes</h3>
+                    <p>Projetos sobre estruturas de dados e conceitos de redes de computadores.</p>
+                    <a href="https://estrutura-dados-redes.vercel.app" target="_blank">Acessar projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Apicaçao pratica</h3>
+                    <p>Aplicação de testes para experimentação de funcionalidades web.</p>
+                    <a href="https://testeapp-hazel.vercel.app" target="_blank">Acessar projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Trabalhos com Python</h3>
+                    <p>Repositório de trabalhos e exercícios desenvolvidos em Python.</p>
+                    <a href="https://trabalhos-com-python.vercel.app" target="_blank">Acessar projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Apresentação ao CFT</h3>
+                    <p>Site de apresentação para o Componente de Formação Tecnológica.</p>
+                    <a href="https://apresenta-ao-cft.vercel.app" target="_blank">Acessar projeto</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Módulos -->
+        <section id="modules">
+            <h2 class="section-title">Módulos</h2>
+            <div class="modules">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div style="font-size:2rem; margin-bottom:10px;">💻</div>
+                    <h3>Arquitetura interna do computador</h3>
+                    <span style="font-size:0.95rem; color:#888;">Módulo 1 (0769) • Prof. Jhonny Alexander Mosquera</span>
+                    <p style="margin:12px 0 0 0;">Aprendi sobre os componentes internos do computador e seu funcionamento.</p>
+                    <div style="margin-top:10px;">
+                        <a href="hardware.html" class="tag-link">
+                            <span style="background:#e3f2fd; color:#1976d2; border-radius:6px; padding:3px 10px; font-size:0.85rem;">Hardware</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <div style="font-size:2rem; margin-bottom:10px;">🖱️</div>
+                    <h3>Dispositivos e periféricos</h3>
+                    <span style="font-size:0.95rem; color:#888;">Módulo 2 (0770) • Prof. Jhonny Alexander Mosquera</span>
+                    <p style="margin:12px 0 0 0;">Estudei os principais dispositivos de entrada e saída e suas funções.</p>
+                    <div style="margin-top:10px;">
+                        <a href="hardware.html" class="tag-link">
+                            <span style="background:#f3e5f5; color:#7b1fa2; border-radius:6px; padding:3px 10px; font-size:0.85rem;">Hardware</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <div style="font-size:2rem; margin-bottom:10px;">🖥️</div>
+                    <h3>Sistemas operativos tipologias</h3>
+                    <span style="font-size:0.95rem; color:#888;">Módulo 3 (0797) • Prof. Jhonny Alexander Mosquera</span>
+                    <p style="margin:12px 0 0 0;">Compreendi os diferentes tipos de sistemas operacionais e suas aplicações.</p>
+                    <div style="margin-top:10px;">
+                        <a href="sistemas-operacionais.html" class="tag-link">
+                            <span style="background:#e8f5e9; color:#388e3c; border-radius:6px; padding:3px 10px; font-size:0.85rem;">Sistemas Operacionais</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card">
+                    <div style="font-size:2rem; margin-bottom:10px;">🛠️</div>
+                    <h3>Utilitários</h3>
+                    <span style="font-size:0.95rem; color:#888;">Módulo 4 (0798) • Prof. Jhonny Alexander Mosquera</span>
+                    <p style="margin:12px 0 0 0;">Conheci softwares utilitários essenciais para o funcionamento do sistema.</p>
+                    <div style="margin-top:10px;">
+                        <a href="software.html" class="tag-link">
+                            <span style="background:#fff3e0; color:#f57c00; border-radius:6px; padding:3px 10px; font-size:0.85rem;">Software</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card">
+                    <div style="font-size:2rem; margin-bottom:10px;">👨‍💻</div>
+                    <h3>Programação em C/C++ - fundamentos</h3>
+                    <span style="font-size:0.95rem; color:#888;">Módulo 5 (0809) • Prof. Jhonny Alexander Mosquera</span>
+                    <p style="margin:12px 0 0 0;">Aprendi os conceitos básicos de programação em C/C++.</p>
+                    <div style="margin-top:10px;">
+                        <a href="c-cpp.html" class="tag-link">
+                            <span style="background:#e1f5fe; color:#0288d1; border-radius:6px; padding:3px 10px; font-size:0.85rem;">C/C++</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="card">
+                    <div style="font-size:2rem; margin-bottom:10px;">🔢</div>
+                    <h3>Algoritmos</h3>
+                    <span style="font-size:0.95rem; color:#888;">Módulo 6 (0804) • Prof. Jhonny Alexander Mosquera</span>
+                    <p style="margin:12px 0 0 0;">Desenvolvi habilidades em lógica e construção de algoritmos.</p>
+                    <div style="margin-top:10px;">
+                        <a href="logica.html" class="tag-link">
+                            <span style="background:#fce4ec; color:#c2185b; border-radius:6px; padding:3px 10px; font-size:0.85rem;">Lógica</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="card">
+                    <div style="font-size:2rem; margin-bottom:10px;">📊</div>
+                    <h3>Estruturas de dados</h3>
+                    <span style="font-size:0.95rem; color:#888;">Módulo 7 (0805) • Prof. Jhonny Alexander Mosquera</span>
+                    <p style="margin:12px 0 0 0;">Estudei listas, filas, pilhas e outras estruturas fundamentais.</p>
+                    <div style="margin-top:10px;">
+                        <a href="c-cpp.html" class="tag-link">
+                            <span style="background:#e8eaf6; color:#3949ab; border-radius:6px; padding:3px 10px; font-size:0.85rem;">C/C++</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="card">
+                    <div style="font-size:2rem; margin-bottom:10px;">📝</div>
+                    <h3>Princípios metodológicos de programação</h3>
+                    <span style="font-size:0.95rem; color:#888;">Módulo 8 (0806) • Prof. Jhonny Alexander Mosquera</span>
+                    <p style="margin:12px 0 0 0;">Aprendi boas práticas e metodologias para programar de forma eficiente.</p>
+                    <div style="margin-top:10px;">
+                        <a href="metodologia.html" class="tag-link">
+                            <span style="background:#f1f8e9; color:#689f38; border-radius:6px; padding:3px 10px; font-size:0.85rem;">Metodologia</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                <div class="card">
+                    <div style="font-size:2rem; margin-bottom:10px;">🔍</div>
+                    <h3>Análise de sistemas</h3>
+                    <span style="font-size:0.95rem; color:#888;">Módulo 9 (0811) • Prof. Jhonny Alexander Mosquera</span>
+                    <p style="margin:12px 0 0 0;">Compreendi o processo de análise e modelagem de sistemas.</p>
+                    <div style="margin-top:10px;">
+                        <a href="analise.html" class="tag-link">
+                            <span style="background:#fffde7; color:#fbc02d; border-radius:6px; padding:3px 10px; font-size:0.85rem;">Análise</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 10 -->
+                <div class="card">
+                    <div style="font-size:2rem; margin-bottom:10px;">🗄️</div>
+                    <h3>Fundamentos da linguagem SQL</h3>
+                    <span style="font-size:0.95rem; color:#888;">Módulo 10 (10788) • Prof. Jhonny Alexander Mosquera</span>
+                    <p style="margin:12px 0 0 0;">Aprendi a criar, consultar e manipular bancos de dados com SQL.</p>
+                    <div style="margin-top:10px;">
+                        <a href="sql.html" class="tag-link">
+                            <span style="background:#e0f2f1; color:#00897b; border-radius:6px; padding:3px 10px; font-size:0.85rem;">SQL</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 11 -->
+                <div class="card">
+                    <div style="font-size:2rem; margin-bottom:10px;">🚀</div>
+                    <h3>Metodologias de desenvolvimento de software</h3>
+                    <span style="font-size:0.95rem; color:#888;">Módulo 11 (10789) • Prof. Jhonny Alexander Mosquera</span>
+                    <p style="margin:12px 0 0 0;">Estudei metodologias ágeis e tradicionais para desenvolvimento de software.</p>
+                    <div style="margin-top:10px;">
+                        <a href="metodologia.html" class="tag-link">
+                            <span style="background:#fbe9e7; color:#d84315; border-radius:6px; padding:3px 10px; font-size:0.85rem;">Metodologia</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+  <!-- Skills -->
+        <section>
+            <h2 class="section-title">Aprendizagem</h2>
+            <div class="skills-grid">
+                <div class="skills-col">
+                    <h3 style="color:#0288d1;">Linguagens</h3>
+                    <p>As linguagens que aprendi durante minha formação.</p>
+                    <ul style="list-style:none; padding:0;">
+                        <li>🐍 Python</li>
+                        <li>🌐 HTML</li>
+                        <li>🎨 CSS</li>
+                        <li>⚡ JavaScript</li>
+                        <li>🟦 C/C++</li>
+                        <li>🟩 SQL</li>
+                    </ul>
+                </div>
+                <div class="skills-col">
+                    <h3 style="color:#0288d1;">Certificados</h3>
+                    <ul style="list-style:none; padding:0;">
+                        <li>✔️ Lógica de Programação</li>
+                        <li>✔️ Python Básico</li>
+                        <li>✔️ HTML e CSS</li>
+                        <li>✔️ SQL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section>
+            <h2 class="section-title">Entre em Contacto</h2>
+            <div class="contact-grid">
+                <div class="contact-col">
+                    <p><b>Email:</b> josegomes@epfundao.edu.pt</p>
+                    <p><b>Telefone:</b> +351 960303583</p>
+                    <p><b>Localização:</b> Escola Profissional do Fundão</p>
+                </div>
+            </div>
+        </section>
+        <footer style="text-align:center; color:#888; margin:40px 0 0 0; font-size:0.95rem;">
+            © José Carlos Gomes. Todos os direitos reservados.
+        </footer>
+    </div>
+</body>
+</html>

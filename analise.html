@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Análise de Sistemas - José Carlos Gomes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f4f6fb; color: #222; }
+        .container { max-width: 950px; margin: 40px auto; padding: 0 16px; }
+        .back-link { display: inline-block; margin: 24px 0 0 0; color: #fbc02d; text-decoration: none; font-weight: bold; }
+        .back-link:hover { text-decoration: underline; }
+        h1 { color: #fbc02d; }
+        .intro { background: #fffde7; border-radius: 10px; padding: 18px; margin-bottom: 28px; }
+        .topics { margin: 24px 0; }
+        .topics h2 { color: #fbc02d; margin-bottom: 10px; }
+        .topics ul { padding-left: 20px; }
+        .topics li { margin-bottom: 8px; }
+        .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 32px; }
+        .project-card { background: #fff; border-radius: 14px; box-shadow: 0 4px 16px #0001; padding: 18px; display: flex; flex-direction: column; align-items: center; transition: transform 0.2s; }
+        .project-card:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 8px 24px #0002; }
+        .project-card img { width: 140px; height: 140px; object-fit: cover; border-radius: 10px; margin-bottom: 14px; border: 2px solid #fffde7; }
+        .project-card h3 { margin: 0 0 8px 0; color: #fbc02d; }
+        .project-card p { margin: 0 0 8px 0; color: #444; font-size: 1rem; text-align: center; }
+        .project-card a { color: #fbc02d; text-decoration: underline; font-size: 0.95rem; }
+        .timeline { background:#fff; border-radius:10px; padding:18px; margin-top:36px; }
+        .timeline h2 { color:#fbc02d; }
+        .timeline ul { list-style: none; padding-left: 0; }
+        .timeline li { margin-bottom: 8px; }
+        .video { background:#fff; border-radius:10px; padding:18px; margin-top:36px; text-align:center; }
+        .video h2 { color:#fbc02d; }
+        .curiosidades { background: #f1f8e9; border-radius: 10px; padding: 18px; margin-top: 36px; }
+        .curiosidades h2 { color: #388e3c; margin-bottom: 10px; }
+        .curiosidades ul { padding-left: 20px; }
+        .curiosidades li { margin-bottom: 8px; }
+        @media (max-width: 700px) {
+            .projects { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Voltar ao portfólio</a>
+        <h1>Análise de Sistemas</h1>
+        <div class="intro">
+            <p>
+                Nesta página, você encontra meus principais aprendizados e projetos sobre <b>Análise de Sistemas</b>. Aqui exploro desde o levantamento de requisitos até a modelagem UML, mostrando como transformar necessidades em soluções tecnológicas eficientes!
+            </p>
+        </div>
+
+        <div class="topics">
+            <h2>Temas Abordados</h2>
+            <ul>
+                <li><b>Levantamento de Requisitos:</b> Técnicas de entrevista, questionários e observação.</li>
+                <li><b>Modelagem UML:</b> Diagramas de casos de uso, classes, sequência e atividades.</li>
+                <li><b>Análise de Processos:</b> Mapeamento e otimização de fluxos de trabalho.</li>
+                <li><b>Ferramentas:</b> Draw.io, Lucidchart, StarUML.</li>
+                <li><b>Documentação:</b> Especificação de requisitos, glossário e prototipagem.</li>
+            </ul>
+        </div>
+
+        <div class="projects">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80" alt="Modelagem UML">
+                <h3>Modelagem UML</h3>
+                <p>Criação de diagramas UML para análise de sistemas reais, como biblioteca e controle de estoque.</p>
+                <a href="https://www.lucidchart.com/pages/pt/o-que-e-uml" target="_blank">Saiba mais sobre UML</a>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Levantamento de Requisitos">
+                <h3>Levantamento de Requisitos</h3>
+                <p>Entrevistas e documentação de requisitos para um sistema de biblioteca, com exemplos reais.</p>
+                <a href="https://www.devmedia.com.br/levantamento-de-requisitos/18594" target="_blank">Como levantar requisitos?</a>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Prototipagem">
+                <h3>Prototipagem de Telas</h3>
+                <p>Desenvolvimento de protótipos navegáveis para validar ideias com usuários.</p>
+                <a href="https://www.figma.com/" target="_blank">Ferramenta Figma</a>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Análise de Processos">
+                <h3>Análise de Processos</h3>
+                <p>Mapeamento de processos de negócio e identificação de pontos de melhoria.</p>
+                <a href="https://www.lucidchart.com/pages/pt/mapa-de-processos" target="_blank">O que é mapeamento de processos?</a>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <h2>Linha do Tempo do Projeto</h2>
+            <ul>
+                <li><b>Semana 1:</b> Estudo de requisitos e entrevistas com usuários.</li>
+                <li><b>Semana 2:</b> Elaboração de diagramas UML e protótipos iniciais.</li>
+                <li><b>Semana 3:</b> Validação dos modelos com a equipe e ajustes.</li>
+                <li><b>Semana 4:</b> Documentação final e apresentação do projeto.</li>
+            </ul>
+        </div>
+
+        <div class="video">
+            <h2>Vídeo: O que é Análise de Sistemas?</h2>
+            <iframe width="360" height="215" src="https://www.youtube.com/embed/0r43J3qkkT4" title="O que é Análise de Sistemas?" frameborder="0" allowfullscreen style="border-radius:10px;"></iframe>
+        </div>
+
+        <div class="curiosidades">
+            <h2>Curiosidades e Dicas</h2>
+            <ul>
+                <li>O termo "UML" significa <b>Unified Modeling Language</b> e é padrão mundial para modelagem de sistemas.</li>
+                <li>Prototipar antes de programar economiza tempo e reduz erros no desenvolvimento.</li>
+                <li>O analista de sistemas atua como ponte entre o cliente e a equipe técnica.</li>
+                <li>Ferramentas online como Lucidchart e Figma facilitam o trabalho colaborativo em modelagem.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>C/C++ - José Carlos Gomes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f4f6fb; color: #222; }
+        .container { max-width: 950px; margin: 40px auto; padding: 0 16px; }
+        .back-link { display: inline-block; margin: 24px 0 0 0; color: #0288d1; text-decoration: none; font-weight: bold; }
+        .back-link:hover { text-decoration: underline; }
+        h1 { color: #0288d1; }
+        .intro { background: #e1f5fe; border-radius: 10px; padding: 18px; margin-bottom: 28px; }
+        .topics { margin: 24px 0; }
+        .topics h2 { color: #0288d1; margin-bottom: 10px; }
+        .topics ul { padding-left: 20px; }
+        .topics li { margin-bottom: 8px; }
+        .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 32px; }
+        .project-card { background: #fff; border-radius: 14px; box-shadow: 0 4px 16px #0001; padding: 18px; display: flex; flex-direction: column; align-items: center; transition: transform 0.2s; }
+        .project-card:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 8px 24px #0002; }
+        .project-card img { width: 140px; height: 140px; object-fit: cover; border-radius: 10px; margin-bottom: 14px; border: 2px solid #e1f5fe; }
+        .project-card h3 { margin: 0 0 8px 0; color: #0288d1; }
+        .project-card p { margin: 0 0 8px 0; color: #444; font-size: 1rem; text-align: center; }
+        .project-card a { color: #0288d1; text-decoration: underline; font-size: 0.95rem; }
+        .timeline { background:#fff; border-radius:10px; padding:18px; margin-top:36px; }
+        .timeline h2 { color:#0288d1; }
+        .timeline ul { list-style: none; padding-left: 0; }
+        .timeline li { margin-bottom: 8px; }
+        .video { background:#fff; border-radius:10px; padding:18px; margin-top:36px; text-align:center; }
+        .video h2 { color:#0288d1; }
+        .curiosidades { background: #f1f8e9; border-radius: 10px; padding: 18px; margin-top: 36px; }
+        .curiosidades h2 { color: #388e3c; margin-bottom: 10px; }
+        .curiosidades ul { padding-left: 20px; }
+        .curiosidades li { margin-bottom: 8px; }
+        .extra { background: #fffde7; border-radius: 10px; padding: 18px; margin-top: 36px; }
+        .extra h2 { color: #fbc02d; }
+        .extra ul { padding-left: 20px; }
+        .extra li { margin-bottom: 8px; }
+        @media (max-width: 700px) {
+            .projects { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Voltar ao portfólio</a>
+        <h1>Projetos em C/C++</h1>
+        <div class="intro">
+            <p>
+                Nesta página, apresento meus principais projetos e aprendizados em <b>C e C++</b>. Aqui você encontra desde algoritmos básicos até estruturas de dados, com exemplos práticos, imagens, dicas e curiosidades para quem quer dominar essas linguagens fundamentais!
+            </p>
+        </div>
+
+        <div class="topics">
+            <h2>Temas Abordados</h2>
+            <ul>
+                <li><b>Fundamentos:</b> Sintaxe, variáveis, operadores e estruturas de controle.</li>
+                <li><b>Funções:</b> Modularização e reutilização de código.</li>
+                <li><b>Estruturas de Dados:</b> Listas, filas, pilhas, ponteiros e structs.</li>
+                <li><b>Algoritmos:</b> Ordenação, busca, recursividade e algoritmos clássicos.</li>
+                <li><b>Compilação:</b> Uso do GCC, Makefile, depuração e análise de desempenho.</li>
+            </ul>
+        </div>
+
+        <div class="projects">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Calculadora C">
+                <h3>Calculadora em C</h3>
+                <p>Desenvolvimento de uma calculadora simples utilizando a linguagem C, com operações básicas e tratamento de erros.</p>
+                <a href="https://replit.com/@onlineide/Calculadora-em-C?v=1" target="_blank">Veja um exemplo online</a>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Estruturas de Dados">
+                <h3>Estruturas de Dados em C++</h3>
+                <p>Implementação de listas, filas e pilhas utilizando classes e ponteiros em C++.</p>
+                <a href="https://www.treinaweb.com.br/blog/estruturas-de-dados-em-c" target="_blank">Saiba mais sobre estruturas</a>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80" alt="Busca Binária">
+                <h3>Busca Binária</h3>
+                <p>Algoritmo de busca binária implementado em C para encontrar elementos em vetores ordenados.</p>
+                <a href="https://www.geeksforgeeks.org/binary-search/" target="_blank">Entenda a busca binária</a>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Recursividade">
+                <h3>Recursividade</h3>
+                <p>Exercícios de recursão, como cálculo de fatorial e sequência de Fibonacci em C.</p>
+                <a href="https://www.programiz.com/c-programming/recursion" target="_blank">Veja exemplos de recursão</a>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <h2>Linha do Tempo do Projeto</h2>
+            <ul>
+                <li><b>Semana 1:</b> Introdução à linguagem C e primeiros algoritmos.</li>
+                <li><b>Semana 2:</b> Funções, modularização e depuração de código.</li>
+                <li><b>Semana 3:</b> Estruturas de dados e manipulação de ponteiros.</li>
+                <li><b>Semana 4:</b> Projetos finais e apresentação dos resultados.</li>
+            </ul>
+        </div>
+
+        <div class="video">
+            <h2>Vídeo: Por que aprender C/C++?</h2>
+            <iframe width="360" height="215" src="https://www.youtube.com/embed/KJgsSFOSQv0" title="Por que aprender C/C++?" frameborder="0" allowfullscreen style="border-radius:10px;"></iframe>
+        </div>
+
+        <div class="curiosidades">
+            <h2>Curiosidades e Dicas</h2>
+            <ul>
+                <li>C é uma das linguagens mais antigas ainda em uso e base para muitas outras, como C++, Java e Python.</li>
+                <li>O símbolo <b>++</b> em C++ significa "incremento", indicando evolução da linguagem C.</li>
+                <li>Ponteiros são um dos conceitos mais poderosos (e temidos) em C/C++.</li>
+                <li>Grandes sistemas operacionais, como Linux e Windows, têm partes escritas em C/C++.</li>
+            </ul>
+        </div>
+
+        <div class="extra">
+            <h2>Materiais Extras e Ferramentas</h2>
+            <ul>
+                <li><a href="https://www.learn-c.org/" target="_blank">Aprenda C interativamente</a></li>
+                <li><a href="https://www.learncpp.com/" target="_blank">Tutorial completo de C++</a></li>
+                <li><a href="https://www.onlinegdb.com/online_c_compiler" target="_blank">Compilador C/C++ online</a></li>
+                <li><a href="https://visualstudio.microsoft.com/pt-br/vs/features/cplusplus/" target="_blank">Visual Studio para C++</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

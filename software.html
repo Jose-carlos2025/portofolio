@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Software - José Carlos Gomes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f4f6fb; color: #222; }
+        .container { max-width: 950px; margin: 40px auto; padding: 0 16px; }
+        .back-link { display: inline-block; margin: 24px 0 0 0; color: #f57c00; text-decoration: none; font-weight: bold; }
+        .back-link:hover { text-decoration: underline; }
+        h1 { color: #f57c00; }
+        .intro { background: #fff3e0; border-radius: 10px; padding: 18px; margin-bottom: 28px; }
+        .topics { margin: 24px 0; }
+        .topics h2 { color: #f57c00; margin-bottom: 10px; }
+        .topics ul { padding-left: 20px; }
+        .topics li { margin-bottom: 8px; }
+        .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 32px; }
+        .project-card { background: #fff; border-radius: 14px; box-shadow: 0 4px 16px #0001; padding: 18px; display: flex; flex-direction: column; align-items: center; transition: transform 0.2s; }
+        .project-card:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 8px 24px #0002; }
+        .project-card img { width: 140px; height: 140px; object-fit: cover; border-radius: 10px; margin-bottom: 14px; border: 2px solid #fff3e0; }
+        .project-card h3 { margin: 0 0 8px 0; color: #f57c00; }
+        .project-card p { margin: 0 0 8px 0; color: #444; font-size: 1rem; text-align: center; }
+        .project-card a { color: #f57c00; text-decoration: underline; font-size: 0.95rem; }
+        .timeline { background:#fff; border-radius:10px; padding:18px; margin-top:36px; }
+        .timeline h2 { color:#f57c00; }
+        .timeline ul { list-style: none; padding-left: 0; }
+        .timeline li { margin-bottom: 8px; }
+        .video { background:#fff; border-radius:10px; padding:18px; margin-top:36px; text-align:center; }
+        .video h2 { color:#f57c00; }
+        .curiosidades { background: #f1f8e9; border-radius: 10px; padding: 18px; margin-top: 36px; }
+        .curiosidades h2 { color: #388e3c; margin-bottom: 10px; }
+        .curiosidades ul { padding-left: 20px; }
+        .curiosidades li { margin-bottom: 8px; }
+        @media (max-width: 700px) {
+            .projects { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Voltar ao portfólio</a>
+        <h1>Projetos de Software</h1>
+        <div class="intro">
+            <p>
+                Nesta página, apresento meus estudos e projetos sobre <b>softwares utilitários</b>, antivírus, backup e ferramentas essenciais para o dia a dia do usuário e do técnico em informática.
+            </p>
+        </div>
+
+        <div class="topics">
+            <h2>Temas Abordados</h2>
+            <ul>
+                <li><b>Antivírus:</b> Instalação, análise e comparação de softwares de proteção.</li>
+                <li><b>Backup:</b> Configuração de backups automáticos e restauração de dados.</li>
+                <li><b>Utilitários:</b> Limpeza de disco, desfragmentação, atualização de drivers.</li>
+                <li><b>Ferramentas:</b> CCleaner, Recuva, Acronis, Windows Defender.</li>
+                <li><b>Segurança:</b> Boas práticas para proteger dados e sistemas.</li>
+            </ul>
+        </div>
+
+        <div class="projects">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Antivírus">
+                <h3>Estudo de Antivírus</h3>
+                <p>Análise comparativa de softwares antivírus e suas funcionalidades.</p>
+                <a href="https://canaltech.com.br/seguranca/melhores-antivirus-gratis/" target="_blank">Veja os melhores antivírus</a>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Backup">
+                <h3>Backup Automático</h3>
+                <p>Configuração de softwares de backup para proteção de dados importantes.</p>
+                <a href="https://www.techtudo.com.br/listas/2022/07/sete-programas-de-backup-para-pc.ghtml" target="_blank">Softwares de backup</a>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <h2>Linha do Tempo do Projeto</h2>
+            <ul>
+                <li><b>Semana 1:</b> Instalação e análise de antivírus.</li>
+                <li><b>Semana 2:</b> Testes de backup e restauração de arquivos.</li>
+                <li><b>Semana 3:</b> Uso de utilitários para otimização do sistema.</li>
+                <li><b>Semana 4:</b> Relatório final e recomendações de segurança.</li>
+            </ul>
+        </div>
+
+        <div class="video">
+            <h2>Vídeo: Backup: o que é, para que serve e como fazer</h2>
+            <iframe width="360" height="215" src="https://www.youtube.com/embed/4vK5JUq6TgA" title="Backup: o que é, para que serve e como fazer" frameborder="0" allowfullscreen style="border-radius:10px;"></iframe>
+        </div>
+
+        <div class="curiosidades">
+            <h2>Curiosidades e Dicas</h2>
+            <ul>
+                <li>Fazer backup regularmente evita perdas irreparáveis de dados.</li>
+                <li>Antivírus gratuitos podem ser tão eficazes quanto os pagos para uso doméstico.</li>
+                <li>Utilitários de limpeza ajudam a manter o computador rápido e seguro.</li>
+                <li>Softwares de segurança devem ser sempre atualizados!</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

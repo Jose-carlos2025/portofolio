@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistemas Operacionais - José Carlos Gomes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f4f6fb; color: #222; }
+        .container { max-width: 950px; margin: 40px auto; padding: 0 16px; }
+        .back-link { display: inline-block; margin: 24px 0 0 0; color: #388e3c; text-decoration: none; font-weight: bold; }
+        .back-link:hover { text-decoration: underline; }
+        h1 { color: #388e3c; }
+        .intro { background: #e8f5e9; border-radius: 10px; padding: 18px; margin-bottom: 28px; }
+        .topics { margin: 24px 0; }
+        .topics h2 { color: #388e3c; margin-bottom: 10px; }
+        .topics ul { padding-left: 20px; }
+        .topics li { margin-bottom: 8px; }
+        .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 32px; }
+        .project-card { background: #fff; border-radius: 14px; box-shadow: 0 4px 16px #0001; padding: 18px; display: flex; flex-direction: column; align-items: center; transition: transform 0.2s; }
+        .project-card:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 8px 24px #0002; }
+        .project-card img { width: 140px; height: 140px; object-fit: cover; border-radius: 10px; margin-bottom: 14px; border: 2px solid #e8f5e9; }
+        .project-card h3 { margin: 0 0 8px 0; color: #388e3c; }
+        .project-card p { margin: 0 0 8px 0; color: #444; font-size: 1rem; text-align: center; }
+        .project-card a { color: #388e3c; text-decoration: underline; font-size: 0.95rem; }
+        .timeline { background:#fff; border-radius:10px; padding:18px; margin-top:36px; }
+        .timeline h2 { color:#388e3c; }
+        .timeline ul { list-style: none; padding-left: 0; }
+        .timeline li { margin-bottom: 8px; }
+        .video { background:#fff; border-radius:10px; padding:18px; margin-top:36px; text-align:center; }
+        .video h2 { color:#388e3c; }
+        .curiosidades { background: #f1f8e9; border-radius: 10px; padding: 18px; margin-top: 36px; }
+        .curiosidades h2 { color: #1976d2; margin-bottom: 10px; }
+        .curiosidades ul { padding-left: 20px; }
+        .curiosidades li { margin-bottom: 8px; }
+        @media (max-width: 700px) {
+            .projects { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Voltar ao portfólio</a>
+        <h1>Projetos de Sistemas Operacionais</h1>
+        <div class="intro">
+            <p>
+                Aqui você encontra meus projetos e aprendizados sobre <b>Sistemas Operacionais</b>, desde a instalação até o uso de comandos avançados no Linux e Windows.
+            </p>
+        </div>
+
+        <div class="topics">
+            <h2>Temas Abordados</h2>
+            <ul>
+                <li><b>Instalação de SO:</b> Windows, Linux (Ubuntu) e dual boot.</li>
+                <li><b>Comandos Básicos:</b> Terminal Linux, Prompt de Comando.</li>
+                <li><b>Gerenciamento de Arquivos:</b> Criação, exclusão, permissões.</li>
+                <li><b>Processos e Serviços:</b> Monitoramento e controle.</li>
+                <li><b>Ferramentas:</b> VirtualBox, VMware, Rufus.</li>
+            </ul>
+        </div>
+
+        <div class="projects">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Instalação de SO">
+                <h3>Instalação de SO</h3>
+                <p>Instalação prática de sistemas Windows e Linux em máquinas virtuais.</p>
+                <a href="https://www.youtube.com/watch?v=QJQyR6vAqk8" target="_blank">Veja como instalar o Ubuntu</a>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80" alt="Comandos Linux">
+                <h3>Comandos Linux</h3>
+                <p>Exploração dos principais comandos do terminal Linux, como ls, cd, mkdir, rm, chmod.</p>
+                <a href="https://www.hostinger.com.br/tutoriais/comandos-linux" target="_blank">Comandos Linux essenciais</a>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <h2>Linha do Tempo do Projeto</h2>
+            <ul>
+                <li><b>Semana 1:</b> Instalação de sistemas operacionais em máquinas virtuais.</li>
+                <li><b>Semana 2:</b> Exploração dos ambientes gráficos e terminais.</li>
+                <li><b>Semana 3:</b> Prática de comandos e gerenciamento de arquivos.</li>
+                <li><b>Semana 4:</b> Relatório final e dicas de uso avançado.</li>
+            </ul>
+        </div>
+
+        <div class="video">
+            <h2>Vídeo: O que é um sistema operacional?</h2>
+            <iframe width="360" height="215" src="https://www.youtube.com/embed/1uFY60CESlM" title="O que é um sistema operacional?" frameborder="0" allowfullscreen style="border-radius:10px;"></iframe>
+        </div>
+
+        <div class="curiosidades">
+            <h2>Curiosidades e Dicas</h2>
+            <ul>
+                <li>O Linux é usado em 90% dos supercomputadores do mundo.</li>
+                <li>Comandos de terminal podem automatizar tarefas repetitivas.</li>
+                <li>É possível rodar Linux dentro do Windows usando WSL.</li>
+                <li>Conhecer SOs diferentes amplia as oportunidades no mercado de TI.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

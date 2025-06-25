@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Metodologia - José Carlos Gomes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f4f6fb; color: #222; }
+        .container { max-width: 950px; margin: 40px auto; padding: 0 16px; }
+        .back-link { display: inline-block; margin: 24px 0 0 0; color: #689f38; text-decoration: none; font-weight: bold; }
+        .back-link:hover { text-decoration: underline; }
+        h1 { color: #689f38; }
+        .intro { background: #f1f8e9; border-radius: 10px; padding: 18px; margin-bottom: 28px; }
+        .topics { margin: 24px 0; }
+        .topics h2 { color: #689f38; margin-bottom: 10px; }
+        .topics ul { padding-left: 20px; }
+        .topics li { margin-bottom: 8px; }
+        .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 32px; }
+        .project-card { background: #fff; border-radius: 14px; box-shadow: 0 4px 16px #0001; padding: 18px; display: flex; flex-direction: column; align-items: center; transition: transform 0.2s; }
+        .project-card:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 8px 24px #0002; }
+        .project-card img { width: 140px; height: 140px; object-fit: cover; border-radius: 10px; margin-bottom: 14px; border: 2px solid #f1f8e9; }
+        .project-card h3 { margin: 0 0 8px 0; color: #689f38; }
+        .project-card p { margin: 0 0 8px 0; color: #444; font-size: 1rem; text-align: center; }
+        .project-card a { color: #689f38; text-decoration: underline; font-size: 0.95rem; }
+        .curiosidades { background: #fffde7; border-radius: 10px; padding: 18px; margin-top: 36px; }
+        .curiosidades h2 { color: #d84315; margin-bottom: 10px; }
+        .curiosidades ul { padding-left: 20px; }
+        .curiosidades li { margin-bottom: 8px; }
+        @media (max-width: 700px) {
+            .projects { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Voltar ao portfólio</a>
+        <h1>Projetos de Metodologia</h1>
+        <div class="intro">
+            <p>
+                Nesta seção, apresento meus estudos e projetos sobre <b>metodologias de desenvolvimento de software</b>, incluindo práticas ágeis e tradicionais. Aqui você encontra exemplos práticos, imagens ilustrativas e curiosidades sobre o mundo da engenharia de software!
+            </p>
+        </div>
+
+        <div class="topics">
+            <h2>Principais Temas Estudados</h2>
+            <ul>
+                <li><b>Scrum:</b> Papéis, eventos e artefatos do framework ágil mais usado no mundo.</li>
+                <li><b>Kanban:</b> Visualização do fluxo de trabalho e melhoria contínua.</li>
+                <li><b>Metodologias Tradicionais:</b> Cascata, V-Model e suas aplicações.</li>
+                <li><b>Documentação Ágil:</b> User Stories, Product Backlog e Sprint Backlog.</li>
+                <li><b>Ferramentas:</b> Trello, Jira, ClickUp e quadros físicos.</li>
+            </ul>
+        </div>
+
+        <div class="projects">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Scrum">
+                <h3>Simulação Scrum</h3>
+                <p>Participei de uma simulação de projeto Scrum, atuando como Scrum Master e desenvolvedor.</p>
+                <a href="https://www.scrum.org/resources/what-is-scrum" target="_blank">Saiba mais sobre Scrum</a>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80" alt="Kanban">
+                <h3>Quadro Kanban Digital</h3>
+                <p>Organizei tarefas de um projeto real usando Kanban no Trello, visualizando o progresso em tempo real.</p>
+                <a href="https://trello.com/pt-BR" target="_blank">Veja o Trello</a>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80" alt="Documentação Ágil">
+                <h3>User Stories e Backlog</h3>
+                <p>Elaborei histórias de usuário e organizei o Product Backlog para um sistema de biblioteca.</p>
+                <a href="https://www.atlassian.com/br/agile/project-management/user-stories" target="_blank">O que são User Stories?</a>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Cascata">
+                <h3>Projeto em Cascata</h3>
+                <p>Experimentei o modelo tradicional Cascata, documentando cada fase do ciclo de vida do software.</p>
+                <a href="https://www.totvs.com/blog/developers/metodologia-cascata/" target="_blank">Sobre o modelo Cascata</a>
+            </div>
+        </div>
+
+        <div class="curiosidades">
+            <h2>Curiosidades e Dicas</h2>
+            <ul>
+                <li>O Scrum foi inspirado em métodos de produção japoneses, como o Toyota Production System.</li>
+                <li>O Kanban pode ser usado até para organizar tarefas pessoais e estudos!</li>
+                <li>Metodologias ágeis focam em <b>entregas rápidas</b> e <b>adaptação constante</b> às mudanças.</li>
+                <li>Ferramentas digitais como Trello e Jira facilitam o trabalho em equipe, mesmo a distância.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

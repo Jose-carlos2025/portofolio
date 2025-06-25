@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL - José Carlos Gomes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f4f6fb; color: #222; }
+        .container { max-width: 950px; margin: 40px auto; padding: 0 16px; }
+        .back-link { display: inline-block; margin: 24px 0 0 0; color: #00897b; text-decoration: none; font-weight: bold; }
+        .back-link:hover { text-decoration: underline; }
+        h1 { color: #00897b; }
+        .intro { background: #e0f2f1; border-radius: 10px; padding: 18px; margin-bottom: 28px; }
+        .topics { margin: 24px 0; }
+        .topics h2 { color: #00897b; margin-bottom: 10px; }
+        .topics ul { padding-left: 20px; }
+        .topics li { margin-bottom: 8px; }
+        .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 32px; }
+        .project-card { background: #fff; border-radius: 14px; box-shadow: 0 4px 16px #0001; padding: 18px; display: flex; flex-direction: column; align-items: center; transition: transform 0.2s; }
+        .project-card:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 8px 24px #0002; }
+        .project-card img { width: 140px; height: 140px; object-fit: cover; border-radius: 10px; margin-bottom: 14px; border: 2px solid #e0f2f1; }
+        .project-card h3 { margin: 0 0 8px 0; color: #00897b; }
+        .project-card p { margin: 0 0 8px 0; color: #444; font-size: 1rem; text-align: center; }
+        .project-card a { color: #00897b; text-decoration: underline; font-size: 0.95rem; }
+        .timeline { background:#fff; border-radius:10px; padding:18px; margin-top:36px; }
+        .timeline h2 { color:#00897b; }
+        .timeline ul { list-style: none; padding-left: 0; }
+        .timeline li { margin-bottom: 8px; }
+        .video { background:#fff; border-radius:10px; padding:18px; margin-top:36px; text-align:center; }
+        .video h2 { color:#00897b; }
+        .curiosidades { background: #f1f8e9; border-radius: 10px; padding: 18px; margin-top: 36px; }
+        .curiosidades h2 { color: #388e3c; margin-bottom: 10px; }
+        .curiosidades ul { padding-left: 20px; }
+        .curiosidades li { margin-bottom: 8px; }
+        @media (max-width: 700px) {
+            .projects { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Voltar ao portfólio</a>
+        <h1>Projetos de SQL</h1>
+        <div class="intro">
+            <p>
+                Aqui você encontra meus projetos e aprendizados sobre <b>SQL e bancos de dados relacionais</b>. Veja exemplos de criação de tabelas, consultas, manipulação de dados e dicas para trabalhar com dados de forma eficiente!
+            </p>
+        </div>
+
+        <div class="topics">
+            <h2>Temas Abordados</h2>
+            <ul>
+                <li><b>Criação de Banco de Dados:</b> Tabelas, chaves primárias e estrangeiras.</li>
+                <li><b>Consultas SQL:</b> SELECT, WHERE, JOIN, GROUP BY, ORDER BY.</li>
+                <li><b>Manipulação de Dados:</b> INSERT, UPDATE, DELETE.</li>
+                <li><b>Ferramentas:</b> MySQL, SQLite, DBeaver.</li>
+                <li><b>Backup e Restauração:</b> Exportação e importação de dados.</li>
+            </ul>
+        </div>
+
+        <div class="projects">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Banco de Dados">
+                <h3>Banco de Dados Escolar</h3>
+                <p>Criação e manipulação de um banco de dados escolar usando SQL, com tabelas de alunos, professores e notas.</p>
+                <a href="https://www.w3schools.com/sql/sql_create_db.asp" target="_blank">Como criar um banco de dados</a>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80" alt="Consultas SQL">
+                <h3>Consultas SQL</h3>
+                <p>Execução de consultas avançadas para extração de informações relevantes dos dados.</p>
+                <a href="https://www.w3schools.com/sql/sql_select.asp" target="_blank">Exemplos de SELECT</a>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <h2>Linha do Tempo do Projeto</h2>
+            <ul>
+                <li><b>Semana 1:</b> Introdução ao SQL e criação de tabelas.</li>
+                <li><b>Semana 2:</b> Inserção e manipulação de dados.</li>
+                <li><b>Semana 3:</b> Consultas avançadas e relacionamentos.</li>
+                <li><b>Semana 4:</b> Backup, restauração e apresentação do projeto.</li>
+            </ul>
+        </div>
+
+        <div class="video">
+            <h2>Vídeo: O que é SQL?</h2>
+            <iframe width="360" height="215" src="https://www.youtube.com/embed/7S_tz1z_5bA" title="O que é SQL?" frameborder="0" allowfullscreen style="border-radius:10px;"></iframe>
+        </div>
+
+        <div class="curiosidades">
+            <h2>Curiosidades e Dicas</h2>
+            <ul>
+                <li>SQL significa <b>Structured Query Language</b> e é padrão mundial para bancos de dados relacionais.</li>
+                <li>Comandos SQL funcionam em vários sistemas, como MySQL, PostgreSQL e SQL Server.</li>
+                <li>Consultas bem feitas podem acelerar muito o trabalho com grandes volumes de dados.</li>
+                <li>Backup regular é essencial para evitar perda de informações importantes.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
