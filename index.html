@@ -5,36 +5,185 @@
     <title>Portfólio - José Carlos Gomes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+body {
+    background: url('https://i.gifer.com/J59.gif') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    color: #fff;
+    /* Remova qualquer background-color sólido */
+}
 
-        .container { max-width: 1000px; margin: 40px auto; padding: 0 16px; }
-        .profile { display: flex; align-items: center; gap: 24px; margin-bottom: 40px; }
-        .profile img { width: 110px; height: 110px; border-radius: 50%; border: 4px solid #2c3e50; object-fit: cover; }
-        .profile-info h1 { margin: 0 0 8px 0; font-size: 2.2rem; }
-        .profile-info p { margin: 0; color: #555; }
-        .section-title { color: #2c3e50; margin-top: 48px; }
-        .modules { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 24px; padding: 16px 0; }
-        .modules .card { background:#fff; border-radius:16px; box-shadow:0 4px 24px #0002; padding:24px; display:flex; flex-direction:column; align-items:flex-start; }
-        .modules .card h3 { margin:0 0 8px 0; }
-        .modules .card a.tag-link { text-decoration:none; }
-        .modules .card a.tag-link span:hover { filter: brightness(0.9); box-shadow: 0 2px 8px #0001; }
-        .skills-grid, .qual-grid, .projects-grid, .contact-grid { display: flex; flex-wrap: wrap; gap: 24px; }
-        .skills-col, .qual-col, .contact-col { flex: 1; min-width: 220px; }
-        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:24px; }
-        .project-card { background:#fff; border-radius:14px; box-shadow:0 4px 16px #0001; padding:18px; }
-        .project-card h3 { margin-top:0; }
-        .project-card a { color:#0288d1; text-decoration:underline; }
-        .contact-form input, .contact-form textarea { width:100%;margin-bottom:8px;padding:8px;border-radius:6px;border:1px solid #ccc; }
-        .contact-form button { background:#0288d1;color:#fff;padding:8px 18px;border:none;border-radius:6px;cursor:pointer; }
-        @media (max-width: 700px) {
-            .profile { flex-direction: column; align-items: flex-start; }
-            .profile img { margin-bottom: 16px; }
-            .skills-grid, .qual-grid, .contact-grid { flex-direction: column; }
-            .projects-grid { grid-template-columns: 1fr; }
-        }
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 48px;
+    background: rgba(10, 20, 40, 0.85);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px #0008;
+    padding: 32px 24px;
+}
+
+.profile img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid #00bfff;
+    object-fit: cover;
+    box-shadow: 0 4px 24px #000a;
+}
+
+.profile-info h1 {
+    margin: 0 0 12px 0;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 0 2px 8px #000a;
+}
+
+.profile-info p, p, li {
+    color: #e0e6f0;
+    font-size: 1.15rem;
+}
+
+.section-title {
+    color: #00bfff;
+    margin-top: 48px;
+    font-size: 2rem;
+    text-shadow: 0 2px 8px #000a;
+}
+
+.modules, .projects-grid, .skills-grid, .contact-grid {
+    background: rgba(10, 20, 40, 0.85);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px #0008;
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.modules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 24px;
+}
+
+.modules .card {
+    background: rgba(30, 60, 120, 0.85);
+    border-radius: 14px;
+    box-shadow: 0 4px 16px #0006;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.modules .card h3 {
+    margin: 0 0 8px 0;
+    color: #00bfff;
+}
+
+.modules .card a.tag-link span {
+    background: #fff2;
+    color: #00bfff;
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 0.95rem;
+}
+
+.skills-col, .contact-col {
+    min-width: 220px;
+}
+
+.skills-col h3 {
+    color: #00bfff;
+    margin-bottom: 8px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 24px;
+}
+
+.project-card {
+    background: rgba(30, 60, 120, 0.85);
+    border-radius: 14px;
+    box-shadow: 0 4px 16px #0006;
+    padding: 18px;
+    margin-bottom: 0;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #00bfff;
+}
+
+.project-card h3:hover {
+    color: #ffea00;
+    text-shadow: 0 0 8px #00bfff, 0 0 16px #fff;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.project-card a {
+    color: #fff;
+    background: #00bfff;
+    padding: 4px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.project-card a:hover {
+    background: #0099cc;
+}
+
+.contact-col p {
+    color: #e0e6f0;
+    font-size: 1.1rem;
+}
+
+footer {
+    text-align: center;
+    color: #e0e6f0;
+    margin: 40px 0 0 0;
+    font-size: 1rem;
+    text-shadow: 0 2px 8px #000a;
+}
+
+@media (max-width: 700px) {
+    .profile {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 18px 8px;
+    }
+    .profile img {
+        margin-bottom: 16px;
+    }
+    .modules, .projects-grid, .skills-grid, .contact-grid {
+        padding: 12px;
+    }
+    .section-title {
+        font-size: 1.3rem;
+    }
+}
+h1{ color: #1100fd;
+}
+li{
+    color: white;
+}
+p{
+    color: white;
+}
     </style>
 </head>
 <body>
-    <div class="container">
+    <div id="particles-js" style="position:fixed;z-index:0;top:0;left:0;width:100vw;height:100vh;"></div>
+    <div class="container" style="position:relative;z-index:1;">
         <!-- Perfil -->
         <section class="profile">
             <img src="Imagem WhatsApp 2025-06-23 às 16.26.26_0a7d11f7.jpg" alt="José Carlos Gomes">
@@ -43,7 +192,7 @@
                 <p>Bem-vindos ao meu Portfólio da disciplina de Componente de Formação Tecnológica,</p>
 <p>
     Sinta-se à vontade para visitar meu repositório no 
-    <a href="https://github.com/Jose-carlos2025?tab=repositories" target="_blank" style="color:#0288d1; text-decoration:underline; font-weight:bold;">
+    <a href="https://github.com/Jose-carlos2025?tab=repositories" target="_blank" style="color:#0602ff; text-decoration:underline; font-weight:bold;">
         GitHub
     </a>
     e conhecer todos os meus projetos públicos.
@@ -113,7 +262,7 @@
                 <div class="card">
                     <div style="font-size:2rem; margin-bottom:10px;">💻</div>
                     <h3>Arquitetura interna do computador</h3>
-                    <span style="font-size:0.95rem; color:#888;">Módulo 1 (0769) • Prof. Jhonny Alexander Mosquera</span>
+                    <span style="font-size:0.95rem; color:#2600fc;">Módulo 1 (0769) • Prof. Jhonny Alexander Mosquera</span>
                     <p style="margin:12px 0 0 0;">Aprendi sobre os componentes internos do computador e seu funcionamento.</p>
                     <div style="margin-top:10px;">
                         <a href="hardware.html" class="tag-link">
@@ -125,7 +274,7 @@
                 <div class="card">
                     <div style="font-size:2rem; margin-bottom:10px;">🖱️</div>
                     <h3>Dispositivos e periféricos</h3>
-                    <span style="font-size:0.95rem; color:#888;">Módulo 2 (0770) • Prof. Jhonny Alexander Mosquera</span>
+                    <span style="font-size:0.95rem; color:#1100ff;">Módulo 2 (0770) • Prof. Jhonny Alexander Mosquera</span>
                     <p style="margin:12px 0 0 0;">Estudei os principais dispositivos de entrada e saída e suas funções.</p>
                     <div style="margin-top:10px;">
                         <a href="hardware.html" class="tag-link">
@@ -137,7 +286,7 @@
                 <div class="card">
                     <div style="font-size:2rem; margin-bottom:10px;">🖥️</div>
                     <h3>Sistemas operativos tipologias</h3>
-                    <span style="font-size:0.95rem; color:#888;">Módulo 3 (0797) • Prof. Jhonny Alexander Mosquera</span>
+                    <span style="font-size:0.95rem; color:#1900ff;">Módulo 3 (0797) • Prof. Jhonny Alexander Mosquera</span>
                     <p style="margin:12px 0 0 0;">Compreendi os diferentes tipos de sistemas operacionais e suas aplicações.</p>
                     <div style="margin-top:10px;">
                         <a href="sistemas-operacionais.html" class="tag-link">
@@ -149,7 +298,7 @@
                 <div class="card">
                     <div style="font-size:2rem; margin-bottom:10px;">🛠️</div>
                     <h3>Utilitários</h3>
-                    <span style="font-size:0.95rem; color:#888;">Módulo 4 (0798) • Prof. Jhonny Alexander Mosquera</span>
+                    <span style="font-size:0.95rem; color:#0400ff;">Módulo 4 (0798) • Prof. Jhonny Alexander Mosquera</span>
                     <p style="margin:12px 0 0 0;">Conheci softwares utilitários essenciais para o funcionamento do sistema.</p>
                     <div style="margin-top:10px;">
                         <a href="software.html" class="tag-link">
@@ -161,7 +310,7 @@
                 <div class="card">
                     <div style="font-size:2rem; margin-bottom:10px;">👨‍💻</div>
                     <h3>Programação em C/C++ - fundamentos</h3>
-                    <span style="font-size:0.95rem; color:#888;">Módulo 5 (0809) • Prof. Jhonny Alexander Mosquera</span>
+                    <span style="font-size:0.95rem; color:#1809e9;">Módulo 5 (0809) • Prof. Jhonny Alexander Mosquera</span>
                     <p style="margin:12px 0 0 0;">Aprendi os conceitos básicos de programação em C/C++.</p>
                     <div style="margin-top:10px;">
                         <a href="c-cpp.html" class="tag-link">
@@ -173,7 +322,7 @@
                 <div class="card">
                     <div style="font-size:2rem; margin-bottom:10px;">🔢</div>
                     <h3>Algoritmos</h3>
-                    <span style="font-size:0.95rem; color:#888;">Módulo 6 (0804) • Prof. Jhonny Alexander Mosquera</span>
+                    <span style="font-size:0.95rem; color:#070bf8;">Módulo 6 (0804) • Prof. Jhonny Alexander Mosquera</span>
                     <p style="margin:12px 0 0 0;">Desenvolvi habilidades em lógica e construção de algoritmos.</p>
                     <div style="margin-top:10px;">
                         <a href="logica.html" class="tag-link">
@@ -185,7 +334,7 @@
                 <div class="card">
                     <div style="font-size:2rem; margin-bottom:10px;">📊</div>
                     <h3>Estruturas de dados</h3>
-                    <span style="font-size:0.95rem; color:#888;">Módulo 7 (0805) • Prof. Jhonny Alexander Mosquera</span>
+                    <span style="font-size:0.95rem; color:#1d06e7;">Módulo 7 (0805) • Prof. Jhonny Alexander Mosquera</span>
                     <p style="margin:12px 0 0 0;">Estudei listas, filas, pilhas e outras estruturas fundamentais.</p>
                     <div style="margin-top:10px;">
                         <a href="c-cpp.html" class="tag-link">
@@ -197,7 +346,7 @@
                 <div class="card">
                     <div style="font-size:2rem; margin-bottom:10px;">📝</div>
                     <h3>Princípios metodológicos de programação</h3>
-                    <span style="font-size:0.95rem; color:#888;">Módulo 8 (0806) • Prof. Jhonny Alexander Mosquera</span>
+                    <span style="font-size:0.95rem; color:#0318d8;">Módulo 8 (0806) • Prof. Jhonny Alexander Mosquera</span>
                     <p style="margin:12px 0 0 0;">Aprendi boas práticas e metodologias para programar de forma eficiente.</p>
                     <div style="margin-top:10px;">
                         <a href="metodologia.html" class="tag-link">
@@ -209,7 +358,7 @@
                 <div class="card">
                     <div style="font-size:2rem; margin-bottom:10px;">🔍</div>
                     <h3>Análise de sistemas</h3>
-                    <span style="font-size:0.95rem; color:#888;">Módulo 9 (0811) • Prof. Jhonny Alexander Mosquera</span>
+                    <span style="font-size:0.95rem; color:#0c08f3;">Módulo 9 (0811) • Prof. Jhonny Alexander Mosquera</span>
                     <p style="margin:12px 0 0 0;">Compreendi o processo de análise e modelagem de sistemas.</p>
                     <div style="margin-top:10px;">
                         <a href="analise.html" class="tag-link">
@@ -221,7 +370,7 @@
                 <div class="card">
                     <div style="font-size:2rem; margin-bottom:10px;">🗄️</div>
                     <h3>Fundamentos da linguagem SQL</h3>
-                    <span style="font-size:0.95rem; color:#888;">Módulo 10 (10788) • Prof. Jhonny Alexander Mosquera</span>
+                    <span style="font-size:0.95rem; color:#061ce6;">Módulo 10 (10788) • Prof. Jhonny Alexander Mosquera</span>
                     <p style="margin:12px 0 0 0;">Aprendi a criar, consultar e manipular bancos de dados com SQL.</p>
                     <div style="margin-top:10px;">
                         <a href="sql.html" class="tag-link">
@@ -233,7 +382,7 @@
                 <div class="card">
                     <div style="font-size:2rem; margin-bottom:10px;">🚀</div>
                     <h3>Metodologias de desenvolvimento de software</h3>
-                    <span style="font-size:0.95rem; color:#888;">Módulo 11 (10789) • Prof. Jhonny Alexander Mosquera</span>
+                    <span style="font-size:0.95rem; color:#2c02e9;">Módulo 11 (10789) • Prof. Jhonny Alexander Mosquera</span>
                     <p style="margin:12px 0 0 0;">Estudei metodologias ágeis e tradicionais para desenvolvimento de software.</p>
                     <div style="margin-top:10px;">
                         <a href="metodologia.html" class="tag-link">
@@ -245,10 +394,10 @@
         </section>
   <!-- Skills -->
         <section>
-            <h2 class="section-title">habilidades</h2>
+            <h2 class="section-title">habilidades                </h2>
             <div class="skills-grid">
                 <div class="skills-col">
-                    <h3 style="color:#0288d1;">Linguagens</h3>
+                    <h3 style="color:#0509e7;">Linguagens</h3>
                     <p>As linguagens que aprendi durante minha formação.</p>
                     <ul style="list-style:none; padding:0;">
                         <li>🐍 Python</li>
@@ -260,7 +409,7 @@
                     </ul>
                 </div>
                 <div class="skills-col">
-                    <h3 style="color:#0288d1;">Certificados</h3>
+                    <h3 style="color:#0112f5;">Certificados</h3>
                     <ul style="list-style:none; padding:0;">
                         <li>✔️ Lógica de Programação</li>
                         <li>✔️ Python Básico</li>
@@ -282,9 +431,92 @@
                 </div>
             </div>
         </section>
-        <footer style="text-align:center; color:#888; margin:40px 0 0 0; font-size:0.95rem;">
+        <footer style="text-align:center; color:#fffbfb; margin:40px 0 0 0; font-size:0.95rem;">
             © José Carlos Gomes. Todos os direitos reservados.
         </footer>
     </div>
+    <script>
+// Efeito de digitação no título principal
+document.addEventListener("DOMContentLoaded", function() {
+    const titulo = document.querySelector('.profile-info h1');
+    const texto = "José Carlos Gomes";
+    let i = 0;
+    titulo.textContent = "";
+    function digitar() {
+        if (i < texto.length) {
+            titulo.textContent += texto.charAt(i);
+            i++;
+            setTimeout(digitar, 100);
+        }
+    }
+    digitar();
+});
+
+// Efeito de brilho nos cards dos projetos ao passar o mouse
+const cards = document.querySelectorAll('.project-card');
+cards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.style.boxShadow = "0 0 24px 8px #00bfff, 0 4px 16px #0006";
+        card.style.transform = "scale(1.03)";
+        card.style.transition = "all 0.3s";
+    });
+    card.addEventListener('mouseleave', () => {
+        card.style.boxShadow = "0 4px 16px #0006";
+        card.style.transform = "scale(1)";
+    });
+});
+
+// Fade-in nos cards dos projetos e módulos ao aparecer na tela
+function fadeInOnScroll() {
+    const elements = document.querySelectorAll('.project-card, .modules .card');
+    elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) {
+            el.style.opacity = 1;
+            el.style.transform = "translateY(0)";
+        }
+    });
+}
+window.addEventListener('scroll', fadeInOnScroll);
+window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.project-card, .modules .card').forEach(el => {
+        el.style.opacity = 0;
+        el.style.transform = "translateY(40px)";
+        el.style.transition = "opacity 0.8s, transform 0.8s";
+    });
+    fadeInOnScroll();
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@3.3.0/tsparticles.bundle.min.js"></script>
+<script>
+window.onload = () => {
+    tsParticles.load("particles-js", {
+        background: {
+            color: { value: "transparent" }
+        },
+        fpsLimit: 60,
+        particles: {
+            number: { value: 60, density: { enable: true, area: 800 } },
+            color: { value: "#00bfff" },
+            shape: { type: "circle" },
+            opacity: { value: 0.5 },
+            size: { value: { min: 2, max: 5 } },
+            move: { enable: true, speed: 1.5, direction: "none", outModes: "bounce" },
+            links: { enable: true, distance: 120, color: "#00bfff", opacity: 0.3, width: 1 }
+        },
+        interactivity: {
+            events: {
+                onHover: { enable: true, mode: "repulse" },
+                onClick: { enable: true, mode: "push" }
+            },
+            modes: {
+                repulse: { distance: 100, duration: 0.4 },
+                push: { quantity: 4 }
+            }
+        },
+        detectRetina: true
+    });
+};
+</script>
 </body>
 </html>
